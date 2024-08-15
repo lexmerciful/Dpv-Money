@@ -1,6 +1,6 @@
 # Dpv-Money
 Dpv Money is a standalone Android application designed to demonstrate key functionalities relevant to fintech services. 
-The application simulates money transfers between different accounts within the app and does not include backend integration. 
+The application simulates transaction processing particularly money transfers between different accounts and update of account information.
 
 
 ## Installation
