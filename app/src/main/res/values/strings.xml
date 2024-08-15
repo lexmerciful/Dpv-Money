@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Dpv Money</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="categories">Categories</string>
+    <string name="payment">Payment</string>
+    <string name="history">History</string>
+    <string name="_0_00">0.00</string>
+    <string name="next">Next</string>
+    <string name="source_account">Source Account</string>
+    <string name="destination_account">Destination Account</string>
+    <string name="you_are_making_a_transfer_of">You are making a transfer of</string>
+    <string name="confirm_transfer">Confirm Transfer</string>
+    <string name="transfer_successful">Transfer Successful</string>
+    <string name="done">Done</string>
+    <string name="welcome_back">Welcome back, %1$s</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="account_no">Account no: %1$s</string>
+    <string name="_available_balance">Available balance: %1$s</string>
+    <string name="_payment_type_source">Bank transfer by %1$s</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="transaction_history_is_empty">Transaction history is empty\nMake your first transaction</string>
+</resources>

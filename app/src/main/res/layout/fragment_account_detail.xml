@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AccountDetailFragment"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/makeTransferCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/account_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merciful Afolabi"
+                android:fontFamily="@font/gilroy_medium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/account_number_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3628642843"
+                android:fontFamily="@font/gilroy_regular"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/account_name_textView"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/available_balance_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NGN 2,000.00"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:layout_marginTop="6dp"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/account_number_textView"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/account_transactions_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_transaction"
+        tools:itemCount="5"/>
+
+    <LinearLayout
+        android:id="@+id/empty_history_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/ic_empty_state" />
+
+        <TextView
+            android:id="@+id/empty_state_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4.2sp"
+            android:text="@string/transaction_history_is_empty"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

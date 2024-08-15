@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657019354597",
+    "project_id": "dpv-money",
+    "storage_bucket": "dpv-money.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657019354597:android:a7a4e62bbd917b14c0c30c",
+        "android_client_info": {
+          "package_name": "com.lexmerciful.dpvmoney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBetBfgSMREk2eNJo4ptznkyHOFiZn3EwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
