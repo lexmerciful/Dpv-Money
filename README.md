@@ -3,6 +3,9 @@ Dpv Money is a standalone Android application designed to demonstrate key functi
 The application simulates transaction processing particularly money transfers between different accounts and update of account information.
 
 
+<img src="https://github.com/user-attachments/assets/82df2f26-acd6-425a-86c4-625fa828d4ac" width="300"> <img src="https://github.com/user-attachments/assets/9a6982fc-d9e6-420c-b28e-a00c01dab077" width="300"> <img src="https://github.com/user-attachments/assets/b8afdbec-f449-45cf-a970-fc7e96161fd3" width="300">
+
+
 ## Installation
 Clone this repository and import into **Android Studio**
 ```bash
