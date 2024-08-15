@@ -63,6 +63,13 @@ class AccountDetailFragment : Fragment() {
         }
     }
 
+    private fun observeBankAccount() {
+        mainViewModel.getBankAccountByNumber(bankAccount.number)?.observe(viewLifecycleOwner) {
+            bankAccount = it
+            populateData()
+        }
+    }
+
     private fun setupTransactionRecyclerView() {
         transactionAdapter = TransactionAdapter()
         transactionAdapter.showTransactionDetails = true
@@ -93,6 +100,7 @@ class AccountDetailFragment : Fragment() {
         super.onResume()
         val bottomNavView = requireActivity().findViewById<BottomNavigationView>(R.id.btm_nav)
         bottomNavView.menu.findItem(R.id.homeFragment).isChecked = true
+        observeBankAccount()
     }
 
 

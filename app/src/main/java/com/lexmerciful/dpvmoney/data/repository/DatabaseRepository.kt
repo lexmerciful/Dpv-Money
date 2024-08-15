@@ -24,7 +24,7 @@ class DatabaseRepository @Inject constructor(
         bankAccountDao.deleteBankAccount(bankAccount)
     }
 
-    fun getBankAccountByNumber(accountNumber: Int): BankAccount? {
+    fun getBankAccountByNumber(accountNumber: Int): LiveData<BankAccount>? {
         return bankAccountDao.getBankAccountByNumber(accountNumber)
     }
 

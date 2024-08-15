@@ -25,7 +25,7 @@ interface BankAccountDao {
     fun deleteAllBankAccounts()
 
     @Query("SELECT * FROM bankAccount WHERE number = :accountNumber LIMIT 1")
-    fun getBankAccountByNumber(accountNumber: Int): BankAccount?
+    fun getBankAccountByNumber(accountNumber: Int): LiveData<BankAccount>?
 
     @Query("SELECT * FROM `bankAccount`")
     fun getAllBankAccount(): LiveData<List<BankAccount>>

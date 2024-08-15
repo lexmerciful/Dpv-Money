@@ -36,7 +36,9 @@ class MainViewModel @Inject constructor(
         repository.updateBankAccount(bankAccount)
     }
 
-    fun getBankAccountByNumber(accountNumber: Int) = repository.getBankAccountByNumber(accountNumber)
+    fun getBankAccountByNumber(accountNumber: Int): LiveData<BankAccount>? {
+        return repository.getBankAccountByNumber(accountNumber)
+    }
 
     fun deleteBankAccount(bankAccount: BankAccount) = viewModelScope.launch(Dispatchers.IO) {
         repository.deletebankAccount(bankAccount)
